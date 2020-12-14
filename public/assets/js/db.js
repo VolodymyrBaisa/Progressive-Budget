@@ -10,7 +10,7 @@
 
 let db;
 
-const openRequest = idb.open("budget", 1);
+const openRequest = indexedDB.open("budget", 1);
 openRequest.onupgradeneeded = function (e) {
     db = e.target.result;
     db.createObjectStore("pending", {

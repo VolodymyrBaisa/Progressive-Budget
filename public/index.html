@@ -15,6 +15,19 @@
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         />
+        <script>
+            navigator.onLine
+                ? document.removeChild(
+                      unescape(
+                          '%3Clink rel="stylesheet" href="assets/css/font-awesome.min.css"%3E%3C/link%3E'
+                      )
+                  )
+                : document.write(
+                      unescape(
+                          '%3Clink rel="stylesheet" href="assets/css/font-awesome.min.css"%3E%3C/link%3E'
+                      )
+                  );
+        </script>
         <link rel="stylesheet" href="assets/css/styles.css" />
         <link rel="manifest" href="manifest.webmanifest" />
         <title>Budget Tracker</title>
@@ -62,8 +75,21 @@
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script>
+            navigator.onLine
+                ? document.removeChild(
+                      unescape(
+                          '%3Cscript src="assets/js/chart.js"%3E%3C/script%3E'
+                      )
+                  )
+                : document.write(
+                      unescape(
+                          '%3Cscript src="assets/js/chart.js"%3E%3C/script%3E'
+                      )
+                  );
+        </script>
+        <script src="assets/js/db.js"></script>
         <script src="assets/js/index.js"></script>
-        <script src="/assets/js/db.js"></script>
         <script>
             if ("serviceWorker" in navigator) {
                 window.addEventListener("load", () => {
