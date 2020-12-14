@@ -24,7 +24,7 @@ To start the server, run `npm start`. To access the app after starting the serve
 
 ## Example Usage
 
-Deployed App:
+Deployed App: https://budget-tracker-pwa2.herokuapp.com/
 
 ## License
 
